@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/Begena",
+      "destination": "https://echoes-du-begena.vercel.app/Begena"
+    },
+    {
+      "source": "/Begena/:path*",
+      "destination": "https://echoes-du-begena.vercel.app/Begena/:path*"
+    }
+  ]
+}
