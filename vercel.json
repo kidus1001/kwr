@@ -1,16 +1,19 @@
 {
-  "routes": [
+  "redirects": [
     {
-      "src": "/Begena/assets/(.*)",
-      "dest": "https://echoes-du-begena.vercel.app/Begena/assets/$1"
+      "source": "/Begena/assets/:path*",
+      "destination": "https://echoes-du-begena.vercel.app/assets/:path*",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/Begena",
+      "destination": "https://echoes-du-begena.vercel.app"
     },
     {
-      "src": "/Begena/(.*)",
-      "dest": "https://echoes-du-begena.vercel.app/Begena/$1"
-    },
-    {
-      "src": "/Begena",
-      "dest": "https://echoes-du-begena.vercel.app/Begena"
+      "source": "/Begena/:path*",
+      "destination": "https://echoes-du-begena.vercel.app/:path*"
     }
   ]
 }
